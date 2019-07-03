@@ -37,7 +37,7 @@ class LinkedList{
     
     //Insertion − Adds an element at the ending of the list.
     func insert(value : Int){
-        //emty list
+        //empty list
         if head == nil{
             head =  Node(value: value, next: nil)
             return
@@ -47,6 +47,13 @@ class LinkedList{
             currentNode = currentNode?.next
         }
          currentNode?.next = Node(value: value, next: nil)
+    }
+    
+    //Delete − Delete an element from first..
+    func DeleteFrist(){
+        if head?.value != nil{
+          head = head?.next
+        }
     }
 
     //Display − Displays the complete list.
@@ -67,4 +74,6 @@ ownLinkList.insert(value: 1)
 ownLinkList.insert(value: 2)
 //1 -> 2 -> 3 -> nil
 ownLinkList.insert(value: 3)
+//2 -> 3 -> nil
+ownLinkList.DeleteFrist()
 ownLinkList.printList()
