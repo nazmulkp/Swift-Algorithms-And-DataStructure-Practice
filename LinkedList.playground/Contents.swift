@@ -72,6 +72,12 @@ class LinkedList{
     }
     
     //Display − Displays the complete list.
+    /*
+     Whenever you are inside of an interview room they’er going to ask you
+     I think about like two or three questions and print out the linked lists items
+     inside your code easiest one if you’re not able to get this pretty good chance
+     that you’re not gonna get the job
+     */
     func printList(){
         print("Printing out list of node")
         var currentNode = head
