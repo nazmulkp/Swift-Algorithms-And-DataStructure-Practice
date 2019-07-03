@@ -49,6 +49,20 @@ class LinkedList{
         currentNode?.next = Node(value: value, next: nil)
     }
     
+     //Insertion − Adds an element In Order of the list.
+    func insertInOrder(value:Int){
+        if head == nil || head?.value ?? Int.min >= value{
+            let newNode = Node(value: value, next: head)
+            head = newNode
+            return
+        }
+        var currentNode = head
+        while currentNode?.next != nil && currentNode?.next?.value ?? Int.min < value {
+            currentNode = currentNode?.next
+        }
+        currentNode?.next = Node(value: value, next:  currentNode?.next)
+    }
+    
     //Delete − Delete an element from first..
     func DeleteFrist(){
         if head?.value != nil{
@@ -75,7 +89,7 @@ class LinkedList{
     /*
      Whenever you are inside of an interview room they’er going to ask you
      I think about like two or three questions and print out the linked lists items
-     inside your code easiest one if you’re not able to get this pretty good chance
+     inside your code easiest one if you’re not able to get this. pretty good chance
      that you’re not gonna get the job
      */
     func printList(){
@@ -99,4 +113,6 @@ ownLinkList.insert(value: 3)
 //ownLinkList.DeleteFrist()
 //1 -> 3 -> nil
 ownLinkList.Delete(value: 2)
+//1 -> 2 -> 3 -> nil
+ownLinkList.insertInOrder(value: 2)
 ownLinkList.printList()
