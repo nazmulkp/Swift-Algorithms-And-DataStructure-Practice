@@ -12,6 +12,7 @@ A linked list is a linear data structure, in which the elements are not
  ####################################################################################
  In simple words, a linked list consists of nodes where each node contains
  a data field and a reference(link) to the next node in the list
+ 1 -> 2 -> 3 -> nil
  ####################################################################################
  */
 
@@ -24,17 +25,29 @@ class Node{
     }
 }
 
-let threeNode = Node(value: 3, next: nil)
-let twoNode = Node(value: 2, next: threeNode)
-let oneNode = Node(value: 1, next: twoNode)
-
-func printList(head : Node?){
-    print("Printing out list of node")
-    var currentNode = head
-    while currentNode != nil {
-        print(currentNode?.value ?? -1)
-        currentNode = currentNode?.next
+class LinkedList{
+    var head : Node?
+    
+    //Setup − Dummy node.
+    init() {
+        let threeNode = Node(value: 3, next: nil)
+        let twoNode = Node(value: 2, next: threeNode)
+        head = Node(value: 1, next: twoNode)
     }
+    
+    //Display − Displays the complete list.
+    func printList(){
+        print("Printing out list of node")
+        var currentNode = head
+        while currentNode != nil {
+            print(currentNode?.value ?? -1)
+            currentNode = currentNode?.next
+        }
+    }
+    
+    
+    
 }
 
-printList(head: oneNode)
+let ownLinkList = LinkedList()
+ownLinkList.printList()
