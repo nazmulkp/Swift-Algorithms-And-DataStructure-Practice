@@ -29,11 +29,28 @@ class LinkedList{
     var head : Node?
     
     //Setup − Dummy node.
-    init() {
-        let threeNode = Node(value: 3, next: nil)
-        let twoNode = Node(value: 2, next: threeNode)
-        head = Node(value: 1, next: twoNode)
+//    init() {
+//        let threeNode = Node(value: 3, next: nil)
+//        let twoNode = Node(value: 2, next: threeNode)
+//        head = Node(value: 1, next: twoNode)
+//    }
+    
+    //Insertion − Adds an element at the ending of the list.
+    
+    func insert(value : Int){
+        //emty list
+        if head == nil{
+            head =  Node(value: value, next: nil)
+            return
+        }
+        var currentNode = head
+        while currentNode?.next != nil {
+            currentNode = currentNode?.next
+        }
+         currentNode?.next = Node(value: value, next: nil)
     }
+    
+    
     
     //Display − Displays the complete list.
     func printList(){
@@ -43,8 +60,14 @@ class LinkedList{
             print(currentNode?.value ?? -1)
             currentNode = currentNode?.next
         }
-    }  
+    }
 }
 
 let ownLinkList = LinkedList()
+//1 -> nil
+ownLinkList.insert(value: 1)
+//1 -> 2 -> nil
+ownLinkList.insert(value: 2)
+//1 -> 2 -> 3 -> nil
+ownLinkList.insert(value: 3)
 ownLinkList.printList()
