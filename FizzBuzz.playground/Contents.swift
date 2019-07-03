@@ -14,10 +14,10 @@ import Foundation
  
  */
 
-var numbers = [1,3,4,5]
+var numbers = [1,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
 for item in numbers{
-    if item % 3 == 0 && item % 5 == 0{
+    if item % 15 == 0{
         print("\(item) FizzBuzz")
     }else if item % 3 == 0 {
         print("\(item) Fizz")
