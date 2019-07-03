@@ -36,7 +36,6 @@ class LinkedList{
 //    }
     
     //Insertion − Adds an element at the ending of the list.
-    
     func insert(value : Int){
         //emty list
         if head == nil{
@@ -49,9 +48,7 @@ class LinkedList{
         }
          currentNode?.next = Node(value: value, next: nil)
     }
-    
-    
-    
+
     //Display − Displays the complete list.
     func printList(){
         print("Printing out list of node")
