@@ -43,10 +43,7 @@ class LinkedList{
             print(currentNode?.value ?? -1)
             currentNode = currentNode?.next
         }
-    }
-    
-    
-    
+    }  
 }
 
 let ownLinkList = LinkedList()
