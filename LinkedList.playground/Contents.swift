@@ -62,7 +62,6 @@ class LinkedList{
             head = head?.next
             return
         }
-        
         var prev : Node?
         var currentNode = head
         while currentNode?.value != value && currentNode != nil {
@@ -94,5 +93,4 @@ ownLinkList.insert(value: 3)
 //ownLinkList.DeleteFrist()
 //1 -> 3 -> nil
 ownLinkList.Delete(value: 2)
-
 ownLinkList.printList()
