@@ -5,3 +5,11 @@ Data Structures and Algorithms with Swift Language
 - FizzBuzz
 - LinkedList
 - BinarySearch
+
+## Contributing
+Pull requests are welcome. For incress efficency, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## Contact with Me
+[Linkedin](https://www.linkedin.com/in/nazmulkp/)
