@@ -1,8 +1,12 @@
 import UIKit
 
 //test code area start
-let numbers = [1,2,4,5,6,7,8,9,14,18,19,20]
-let searchValue = 19
+//let numbers = [1,2,4,5,6,7,8,9,14,18,19,20]
+var numbers = [Int]()
+for i in 0..<100{
+    numbers.append(i)
+}
+let searchValue = 99
 
 //test code area end
 
