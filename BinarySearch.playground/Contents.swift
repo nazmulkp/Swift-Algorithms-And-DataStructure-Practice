@@ -13,6 +13,10 @@ let searchValue = 99
 func printInfo(_ numberOfTimes : Int, searchValue : Int){
     print("Number of times: \(numberOfTimes) search for: \(searchValue)")
 }
+
+/*
+ Linear search is a very basic and simple search algorithm. In Linear search, we search an element or value in a given array by traversing the array from the starting, till the desired element or value is found.
+ */
 func linearSearchForSearchValue(searchValue:Int,array: [Int])->Bool
 {
     var numberOfTimes = 0
@@ -28,7 +32,9 @@ func linearSearchForSearchValue(searchValue:Int,array: [Int])->Bool
 }
 
 
-
+/*
+ In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array.
+ */
 func binarySearchForSearchValue(searchValue:Int,array: [Int])->Bool
 {
     var leftIndex  = 0
