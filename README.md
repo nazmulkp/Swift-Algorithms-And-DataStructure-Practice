@@ -5,6 +5,7 @@ Data Structures and Algorithms with Swift Language
 - FizzBuzz
 - LinkedList
 - BinarySearch
+- Factorials And Recursion
 
 ## Contributing
 Pull requests are welcome. For incress efficency, please open an issue first to discuss what you would like to change.
