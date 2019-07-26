@@ -14,4 +14,4 @@ Pull requests are welcome. For incress efficency, please open an issue first to 
 Please make sure to update tests as appropriate.
 
 ## Contact with Me
-*Mail: nazmulcsharp@gmail.com and Skypeid nazmulkp1
+*Mail: nazmulcsharp@gmail.com and Skype: nazmulkp1*
