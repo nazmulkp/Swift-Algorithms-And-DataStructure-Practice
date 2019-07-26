@@ -1,6 +1,8 @@
-# Interview Swift Algorithms And DataStructure Practice
+# Interview Swift Algorithms And Data Structure Practice
 Practice programming skills with tutorials and practice problems of Basic Programming, 
-Data Structures and Algorithms with Swift Language 
+Data Structures and Algorithms with Swift Language.
+
+<b>Swift algorithms data structures, coding interview, coding challenge and interview preparation</b>
 ## Algorithms
 - [FizzBuzz](https://github.com/nazmulkp/Swift-Algorithms-And-DataStructure-Practice/blob/master/FizzBuzz.playground/Contents.swift)
 - [LinkedList](https://github.com/nazmulkp/Swift-Algorithms-And-DataStructure-Practice/blob/master/LinkedList.playground/Contents.swift)
